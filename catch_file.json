@@ -1,0 +1,623 @@
+[
+  {
+    "id": 1016,
+    "name": "assets-dir",
+    "groupName": "mcf/capaa",
+    "branch": "master",
+    "lastestVersion": "-",
+    "coverage": "http://git.mchz.com.cn/mcf/capaa/assets-dir/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/capaa/assets-dir/badges/master/pipeline.svg"
+  },
+  {
+    "id": 1015,
+    "name": "tongfang-configs",
+    "groupName": "mcf/capaa",
+    "branch": "master",
+    "lastestVersion": "@capaa/tongfang-configs@0.1.21",
+    "coverage": "http://git.mchz.com.cn/mcf/capaa/tongfang-configs/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/capaa/tongfang-configs/badges/master/pipeline.svg"
+  },
+  {
+    "id": 1013,
+    "name": "tongfang",
+    "groupName": "mcf/capaa",
+    "branch": "master",
+    "lastestVersion": "@capaa/tongfang@0.1.8",
+    "coverage": "http://git.mchz.com.cn/mcf/capaa/tongfang/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/capaa/tongfang/badges/master/pipeline.svg"
+  },
+  {
+    "id": 895,
+    "name": "report-custom",
+    "groupName": "mcf/capaa",
+    "branch": "master",
+    "lastestVersion": "@capaa/report-custom@0.1.18-rc-1",
+    "coverage": "http://git.mchz.com.cn/mcf/capaa/report-custom/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/capaa/report-custom/badges/master/pipeline.svg"
+  },
+  {
+    "id": 894,
+    "name": "report",
+    "groupName": "mcf/capaa",
+    "branch": "master",
+    "lastestVersion": "@capaa/report@0.1.15-rc-1",
+    "coverage": "http://git.mchz.com.cn/mcf/capaa/report/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/capaa/report/badges/master/pipeline.svg"
+  },
+  {
+    "id": 894,
+    "name": "report",
+    "groupName": "mcf/capaa",
+    "branch": "v0,1.1",
+    "lastestVersion": "@capaa/report@0.1.15-rc-1",
+    "coverage": "http://git.mchz.com.cn/mcf/capaa/report/badges/v0,1.1/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/capaa/report/badges/v0,1.1/pipeline.svg"
+  },
+  {
+    "id": 893,
+    "name": "notification-records",
+    "groupName": "mcf/capaa",
+    "branch": "develop",
+    "lastestVersion": "@capaa/notification-records@0.1.8-rc-2",
+    "coverage": "http://git.mchz.com.cn/mcf/capaa/notification-records/badges/develop/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/capaa/notification-records/badges/develop/pipeline.svg"
+  },
+  {
+    "id": 893,
+    "name": "notification-records",
+    "groupName": "mcf/capaa",
+    "branch": "master",
+    "lastestVersion": "@capaa/notification-records@0.1.8-rc-2",
+    "coverage": "http://git.mchz.com.cn/mcf/capaa/notification-records/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/capaa/notification-records/badges/master/pipeline.svg"
+  },
+  {
+    "id": 715,
+    "name": "react-dnd",
+    "groupName": "mcf/demo",
+    "branch": "master",
+    "lastestVersion": "-",
+    "coverage": "http://git.mchz.com.cn/mcf/demo/react-dnd/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/demo/react-dnd/badges/master/pipeline.svg"
+  },
+  {
+    "id": 1076,
+    "name": "RuleExpression",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "-",
+    "coverage": "http://git.mchz.com.cn/mcf/RuleExpression/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/RuleExpression/badges/master/pipeline.svg"
+  },
+  {
+    "id": 858,
+    "name": "mcf-react-scripts",
+    "groupName": "mcf",
+    "branch": "feature/add-crarc",
+    "lastestVersion": "@mcf/react-scripts@0.3.5-rc18",
+    "coverage": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/feature/add-crarc/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/feature/add-crarc/pipeline.svg"
+  },
+  {
+    "id": 858,
+    "name": "mcf-react-scripts",
+    "groupName": "mcf",
+    "branch": "feature/add-git-hooks-precommit",
+    "lastestVersion": "@mcf/react-scripts@0.3.5-rc18",
+    "coverage": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/feature/add-git-hooks-precommit/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/feature/add-git-hooks-precommit/pipeline.svg"
+  },
+  {
+    "id": 858,
+    "name": "mcf-react-scripts",
+    "groupName": "mcf",
+    "branch": "feature/adddict",
+    "lastestVersion": "@mcf/react-scripts@0.3.5-rc18",
+    "coverage": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/feature/adddict/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/feature/adddict/pipeline.svg"
+  },
+  {
+    "id": 858,
+    "name": "mcf-react-scripts",
+    "groupName": "mcf",
+    "branch": "feature/fix-readme",
+    "lastestVersion": "@mcf/react-scripts@0.3.5-rc18",
+    "coverage": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/feature/fix-readme/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/feature/fix-readme/pipeline.svg"
+  },
+  {
+    "id": 858,
+    "name": "mcf-react-scripts",
+    "groupName": "mcf",
+    "branch": "feature/typescript-template",
+    "lastestVersion": "@mcf/react-scripts@0.3.5-rc18",
+    "coverage": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/feature/typescript-template/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/feature/typescript-template/pipeline.svg"
+  },
+  {
+    "id": 858,
+    "name": "mcf-react-scripts",
+    "groupName": "mcf",
+    "branch": "features/templates",
+    "lastestVersion": "-",
+    "coverage": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/features/templates/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/features/templates/pipeline.svg"
+  },
+  {
+    "id": 858,
+    "name": "mcf-react-scripts",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "@mcf/react-scripts@0.3.5-rc18",
+    "coverage": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/mcf-react-scripts/badges/master/pipeline.svg"
+  },
+  {
+    "id": 782,
+    "name": "core",
+    "groupName": "mcf",
+    "branch": "develop",
+    "lastestVersion": "mcf-core@0.2.2",
+    "coverage": "http://git.mchz.com.cn/mcf/core/badges/develop/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/core/badges/develop/pipeline.svg"
+  },
+  {
+    "id": 782,
+    "name": "core",
+    "groupName": "mcf",
+    "branch": "feautre/model",
+    "lastestVersion": "@mcf/core@0.2.8",
+    "coverage": "http://git.mchz.com.cn/mcf/core/badges/feautre/model/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/core/badges/feautre/model/pipeline.svg"
+  },
+  {
+    "id": 782,
+    "name": "core",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "mcf-core@0.2.2",
+    "coverage": "http://git.mchz.com.cn/mcf/core/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/core/badges/master/pipeline.svg"
+  },
+  {
+    "id": 780,
+    "name": "react-mcf-script",
+    "groupName": "mcf",
+    "branch": "feature/add-template",
+    "lastestVersion": "-",
+    "coverage": "http://git.mchz.com.cn/mcf/react-mcf-script/badges/feature/add-template/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/react-mcf-script/badges/feature/add-template/pipeline.svg"
+  },
+  {
+    "id": 780,
+    "name": "react-mcf-script",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "-",
+    "coverage": "http://git.mchz.com.cn/mcf/react-mcf-script/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/react-mcf-script/badges/master/pipeline.svg"
+  },
+  {
+    "id": 775,
+    "name": "cli",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "hzmc-cli@1.3.1",
+    "coverage": "http://git.mchz.com.cn/mcf/cli/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/cli/badges/master/pipeline.svg"
+  },
+  {
+    "id": 712,
+    "name": "mcf-vue",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "-",
+    "coverage": "http://git.mchz.com.cn/mcf/mcf-vue/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/mcf-vue/badges/master/pipeline.svg"
+  },
+  {
+    "id": 697,
+    "name": "charts",
+    "groupName": "mcf",
+    "branch": "develop",
+    "lastestVersion": "-",
+    "coverage": "http://git.mchz.com.cn/mcf/charts/badges/develop/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/charts/badges/develop/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "2-baseform",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/2-baseform/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/2-baseform/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "6-select-fetch-params",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/6-select-fetch-params/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/6-select-fetch-params/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "7-detailtable-labelkey-name",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/7-detailtable-labelkey-name/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/7-detailtable-labelkey-name/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "LargeSelect",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/LargeSelect/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/LargeSelect/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "develop",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/develop/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/develop/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "extraColumn",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/extraColumn/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/extraColumn/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/addLayoutComp",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/addLayoutComp/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/addLayoutComp/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/addSwitchFixed",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/addSwitchFixed/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/addSwitchFixed/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/addUnittest-zsh",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/addUnittest-zsh/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/addUnittest-zsh/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/baseFormLayout",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/baseFormLayout/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/baseFormLayout/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/edittable",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/edittable/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/edittable/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/fun/Ellipsis",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/fun/Ellipsis/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/fun/Ellipsis/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/testCase",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/testCase/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/testCase/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/ts/ButtonGroups",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/ButtonGroups/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/ButtonGroups/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/ts/CollapsePanel",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/CollapsePanel/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/CollapsePanel/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/ts/DetailTable",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/DetailTable/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/DetailTable/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/ts/EditTable",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/EditTable/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/EditTable/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/ts/Ellipsis",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/Ellipsis/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/Ellipsis/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/ts/ErrorBoundary",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/ErrorBoundary/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/ErrorBoundary/pipeline.svg"
+  },
+  {
+    "id": 621,
+    "name": "components",
+    "groupName": "mcf",
+    "branch": "feature/ts/ExpandList",
+    "lastestVersion": "mcf-components@1.3.4-beta",
+    "coverage": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/ExpandList/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/components/badges/feature/ts/ExpandList/pipeline.svg"
+  },
+  {
+    "id": 620,
+    "name": "module",
+    "groupName": "mcf",
+    "branch": "1-feature-saga",
+    "lastestVersion": "mcf-module@1.3.3",
+    "coverage": "http://git.mchz.com.cn/mcf/module/badges/1-feature-saga/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/module/badges/1-feature-saga/pipeline.svg"
+  },
+  {
+    "id": 620,
+    "name": "module",
+    "groupName": "mcf",
+    "branch": "2-savepage",
+    "lastestVersion": "mcf-module@1.3.3",
+    "coverage": "http://git.mchz.com.cn/mcf/module/badges/2-savepage/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/module/badges/2-savepage/pipeline.svg"
+  },
+  {
+    "id": 620,
+    "name": "module",
+    "groupName": "mcf",
+    "branch": "develop",
+    "lastestVersion": "mcf-module@1.3.3",
+    "coverage": "http://git.mchz.com.cn/mcf/module/badges/develop/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/module/badges/develop/pipeline.svg"
+  },
+  {
+    "id": 620,
+    "name": "module",
+    "groupName": "mcf",
+    "branch": "hotfix/intl",
+    "lastestVersion": "mcf-module@1.3.3",
+    "coverage": "http://git.mchz.com.cn/mcf/module/badges/hotfix/intl/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/module/badges/hotfix/intl/pipeline.svg"
+  },
+  {
+    "id": 620,
+    "name": "module",
+    "groupName": "mcf",
+    "branch": "jsdoc",
+    "lastestVersion": "mcf-module@1.3.3",
+    "coverage": "http://git.mchz.com.cn/mcf/module/badges/jsdoc/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/module/badges/jsdoc/pipeline.svg"
+  },
+  {
+    "id": 620,
+    "name": "module",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "mcf-module@1.3.3",
+    "coverage": "http://git.mchz.com.cn/mcf/module/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/module/badges/master/pipeline.svg"
+  },
+  {
+    "id": 619,
+    "name": "decorators",
+    "groupName": "mcf",
+    "branch": "develop",
+    "lastestVersion": "mcf-decorators@1.0.0-rc1",
+    "coverage": "http://git.mchz.com.cn/mcf/decorators/badges/develop/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/decorators/badges/develop/pipeline.svg"
+  },
+  {
+    "id": 619,
+    "name": "decorators",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "mcf-decorators@1.0.0-rc1",
+    "coverage": "http://git.mchz.com.cn/mcf/decorators/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/decorators/badges/master/pipeline.svg"
+  },
+  {
+    "id": 618,
+    "name": "crud",
+    "groupName": "mcf",
+    "branch": "develop",
+    "lastestVersion": "mcf-crud@1.3.1",
+    "coverage": "http://git.mchz.com.cn/mcf/crud/badges/develop/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/crud/badges/develop/pipeline.svg"
+  },
+  {
+    "id": 618,
+    "name": "crud",
+    "groupName": "mcf",
+    "branch": "jsdoc",
+    "lastestVersion": "mcf-crud@1.3.1",
+    "coverage": "http://git.mchz.com.cn/mcf/crud/badges/jsdoc/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/crud/badges/jsdoc/pipeline.svg"
+  },
+  {
+    "id": 618,
+    "name": "crud",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "mcf-crud@1.3.1",
+    "coverage": "http://git.mchz.com.cn/mcf/crud/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/crud/badges/master/pipeline.svg"
+  },
+  {
+    "id": 618,
+    "name": "crud",
+    "groupName": "mcf",
+    "branch": "master1",
+    "lastestVersion": "mcf-crud@1.3.1",
+    "coverage": "http://git.mchz.com.cn/mcf/crud/badges/master1/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/crud/badges/master1/pipeline.svg"
+  },
+  {
+    "id": 618,
+    "name": "crud",
+    "groupName": "mcf",
+    "branch": "typescript",
+    "lastestVersion": "mcf-crud@1.3.1",
+    "coverage": "http://git.mchz.com.cn/mcf/crud/badges/typescript/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/crud/badges/typescript/pipeline.svg"
+  },
+  {
+    "id": 618,
+    "name": "crud",
+    "groupName": "mcf",
+    "branch": "v0.1.1",
+    "lastestVersion": "mcf-crud@1.3.1",
+    "coverage": "http://git.mchz.com.cn/mcf/crud/badges/v0.1.1/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/crud/badges/v0.1.1/pipeline.svg"
+  },
+  {
+    "id": 616,
+    "name": "utils",
+    "groupName": "mcf",
+    "branch": "1-responseprocess-catch",
+    "lastestVersion": "mcf-utils@1.3.6-rc",
+    "coverage": "http://git.mchz.com.cn/mcf/utils/badges/1-responseprocess-catch/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/utils/badges/1-responseprocess-catch/pipeline.svg"
+  },
+  {
+    "id": 616,
+    "name": "utils",
+    "groupName": "mcf",
+    "branch": "develop",
+    "lastestVersion": "mcf-utils@1.3.6-rc",
+    "coverage": "http://git.mchz.com.cn/mcf/utils/badges/develop/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/utils/badges/develop/pipeline.svg"
+  },
+  {
+    "id": 616,
+    "name": "utils",
+    "groupName": "mcf",
+    "branch": "feature/addJSDoc",
+    "lastestVersion": "mcf-utils@1.3.6-rc",
+    "coverage": "http://git.mchz.com.cn/mcf/utils/badges/feature/addJSDoc/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/utils/badges/feature/addJSDoc/pipeline.svg"
+  },
+  {
+    "id": 616,
+    "name": "utils",
+    "groupName": "mcf",
+    "branch": "feature/preRquestoptions",
+    "lastestVersion": "mcf-utils@1.3.6-rc",
+    "coverage": "http://git.mchz.com.cn/mcf/utils/badges/feature/preRquestoptions/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/utils/badges/feature/preRquestoptions/pipeline.svg"
+  },
+  {
+    "id": 616,
+    "name": "utils",
+    "groupName": "mcf",
+    "branch": "feature/validateIp",
+    "lastestVersion": "mcf-utils@1.3.6-rc",
+    "coverage": "http://git.mchz.com.cn/mcf/utils/badges/feature/validateIp/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/utils/badges/feature/validateIp/pipeline.svg"
+  },
+  {
+    "id": 616,
+    "name": "utils",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "mcf-utils@1.3.6-rc",
+    "coverage": "http://git.mchz.com.cn/mcf/utils/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/utils/badges/master/pipeline.svg"
+  },
+  {
+    "id": 616,
+    "name": "utils",
+    "groupName": "mcf",
+    "branch": "typescript",
+    "lastestVersion": "mcf-utils@1.3.6-rc",
+    "coverage": "http://git.mchz.com.cn/mcf/utils/badges/typescript/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/utils/badges/typescript/pipeline.svg"
+  },
+  {
+    "id": 616,
+    "name": "utils",
+    "groupName": "mcf",
+    "branch": "v0.1.1",
+    "lastestVersion": "mcf-utils@1.3.6-rc",
+    "coverage": "http://git.mchz.com.cn/mcf/utils/badges/v0.1.1/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/utils/badges/v0.1.1/pipeline.svg"
+  },
+  {
+    "id": 615,
+    "name": "icons",
+    "groupName": "mcf",
+    "branch": "develop",
+    "lastestVersion": "mcf-icons@1.0.0-rc1",
+    "coverage": "http://git.mchz.com.cn/mcf/icons/badges/develop/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/icons/badges/develop/pipeline.svg"
+  },
+  {
+    "id": 615,
+    "name": "icons",
+    "groupName": "mcf",
+    "branch": "master",
+    "lastestVersion": "mcf-icons@1.0.0-rc1",
+    "coverage": "http://git.mchz.com.cn/mcf/icons/badges/master/coverage.svg",
+    "pipeline": "http://git.mchz.com.cn/mcf/icons/badges/master/pipeline.svg"
+  }
+]

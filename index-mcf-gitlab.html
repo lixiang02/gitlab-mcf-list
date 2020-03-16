@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GITLAB PROJECT LIST</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">   
+    <link href="https://unpkg.com/bootstrap-table@1.15.3/dist/bootstrap-table.min.css" rel="stylesheet">    
+</head>
+<body>
+    <table data-toggle="table" id="projectTable">
+        <thead id="headTarget">
+          <tr id="projectTitle" >
+          </tr>
+        </thead>
+        <tbody id="defaultTbody">
+            <tr>
+                <td>获取数据，请等待。。。</td>
+            </tr>
+        </tbody>
+    </table>
+    <script id="headTemplate" type="x-tmpl-mustache">
+        <th style="padding: 7px;">{@ head1 @}</th>
+        <th style="padding: 7px;">{@ head2 @}</th>
+        <th style="padding: 7px;">{@ head3 @}</th>
+        <th style="padding: 7px;">{@ head4 @}</th>
+        <th style="padding: 7px;">{@ head5 @}</th>
+        <th style="padding: 7px;">{@ head6 @}</th>
+    </script>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-table@1.15.3/dist/bootstrap-table.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://github.com/dankogai/js-base64/blob/master/base64.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
+<script src="https://unpkg.com/mustache@latest"></script>
+
+<script>
+    const config = {
+        serverUrl: 'http://localhost:3000/list?catch=true',
+        privateToken: '#'
+    }
+
+    const defaultFetchOptions = {
+        url: '',
+        dataType:"json",
+        error: function (XMLHttpRequest, textStatus, errorThrown) {                                            
+            if (errorThrown !== 'Not Found') {
+                console.error('-error-errorThrown-', errorThrown)
+            }
+        }
+    }
+
+    // 循环遍历上面的json数据，每一行代表一个li
+    let tbody = jQuery("<tbody id=\"mytbody\"></tbody>")
+    let hasTitle = false
+    let completeCount = 0
+    let shouldCompleteCount = 0
+
+    $.ajax(mergeOptions({
+        url: formatUrl(config.serverUrl),
+        success: async function(data, success, res){
+            console.log('data: ', data)
+            if (data.code === 0) {
+                if (data.data && data.data.length) {
+                    shouldCompleteCount = data.data.length
+                    appendTitle()
+                    Promise.all(data.data.map(project => appendProject(project)))
+                }
+            }
+        }
+    }))
+    
+    function appendTitle() {
+        const customTags = ['{@', '@}']
+        const template = document.getElementById('headTemplate').innerHTML;
+        const rendered = Mustache.render(template, { 
+            head1: '项目名称',
+            head2: '项目组名称',
+            head3: '分支',
+            head4: '最新版本',
+            head5: 'pipeline状态',                 
+            head6: '覆盖率'                    
+        }, {}, customTags)
+        document.getElementById('headTarget').innerHTML = rendered;
+    }
+
+    async function appendProject(item) {
+        let tr = jQuery("<tr></tr>")
+
+        if (!hasTitle) {
+            hasTitle = true
+            jQuery("#defaultTbody").remove()
+            appendTitle()
+            jQuery("#projectTable").append(tbody)
+        } else {
+            tbody = jQuery("#mytbody")
+        }
+
+        // 再把div1，append到li上
+        tr.append(renderTemplate('td', { text: item.name }))
+            .append(renderTemplate('td', { text: item.groupName }))
+            .append(renderTemplate('td', { text: item.branch }))
+            .append(renderTemplate('td', { text: item.lastestVersion }))
+            .append(renderTemplate('td', { text: '', appendData: renderTemplate('img', { imageUrl: item.coverage }) }, 'append'))
+            .append(renderTemplate('td', { text: '', appendData: renderTemplate('img', { imageUrl: item.pipeline }) }, 'append'))
+
+        // 最后定位到ul，并把li append到ul上
+        tbody.append(tr)
+
+        // 完成计数
+        completeCount++
+
+        // 图片懒加载
+        if (shouldCompleteCount === completeCount) {
+            $('img.lazy').lazyload()
+        }
+    }
+
+    function mergeOptions(option) {
+        return Object.assign({}, defaultFetchOptions, option)
+    }
+
+    function formatUrl(url, options={}) {
+        let result = url
+        for (const key in options) {
+            result = result.replace(`{@${key}@}`, options[key])
+        }
+        return result
+    }
+
+    function renderTemplate(templateType, data, options) {
+        const customTags = ['{@', '@}']
+        let template = ''
+        switch (templateType) {
+            case 'th':
+                template = "<th style=\"padding: 7px;\">{@text@}</th>"
+                break;
+            case 'td':
+                template = "<td>{@text@}</td>"
+                break;
+            case 'img':
+                template = "<img class=\"lazy\" data-original=\"{@imageUrl@}\" />"
+            default:
+                break;
+        }
+        let result = Mustache.render(template, data, {}, customTags)
+        if (options !== 'html') {
+            if (options === 'append') {
+                return jQuery(result).append(data.appendData)
+            }
+            return jQuery(result)
+        }
+        return result
+    }
+
+</script>
+</html>
